@@ -13,6 +13,7 @@ resource "aws_instance" "dev_instance" {
   ami           = data.aws_ami.amazon_linux.id
   subnet_id     = "subnet-0aaeda47ba0e1165a"
   user_data     = file("userdata.sh")
+  associate_public_ip_address = true
   tags = {
     Name = "dev_instance"
   }
