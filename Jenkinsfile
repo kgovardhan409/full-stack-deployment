@@ -1,7 +1,7 @@
 pipeline {
    agent any
    environment {
-       TF_DIR = "qa"
+       TF_DIR = "prod"
        TF_CLI_ARGS = "-no-color"   // Ensures clean, aligned output
    }
    stages {
