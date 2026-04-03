@@ -1,8 +1,8 @@
 terraform {
   backend "s3" {
-    bucket       = "my-full-stack-tf-files"
-    key          = "ec2/terraform.tfstate"
-    region       = "us-east-1"
+    bucket       = "dev-full-stack-tf-files"
+    key          = "dev/terraform.tfstate"
+    region       = "ap-south-1"
     encrypt      = true
     use_lockfile = true
   }
